@@ -17,39 +17,63 @@
  	  #firstCol{
 		width: 33%;
 		display: inline-block;
-		border-right: 1px solid black;
 		text-align: center;
 	  }
 	  #firstCol,span{ padding: 3px;}
 	  #secondCol{
 		float: right;
 		width: 66%;
-		text-align: center;
+		text-align: left;
+		border-left: 1px solid black;
+		min-height:60px;
 	  }
 	</style>
   </head>
-<body>
+  <body>
 
   <div id="displayTable">
 	<div id="tableHeader">HW03 Task Three</div>
 	<div id="tableBody">
 	  <div id="firstCol">
-		<span onclick="displayText('first')" id="first">LoremIpsem</span><br>
+		<span onclick="displayText('first')" id="second">Lorem Ipsum</span><br>
 		<span onclick="displayText('second')" id="second">99 Bottles</span><br>
 		<span onclick="displayText('third')" id="third">Third Thing</span>
 	  </div>
           <div id="secondCol">
-		<span id="firstText" style="display:block">LoremIpsem</span>
-                <span id="secondText" style="display:none">99 Bottles</span>
-                <span id="thirdText" style="display:none">Third Thing</span>
+		<span id="firstText" style="display:block">
+			<p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+			</p>
+			<p>
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+			</p>
+			<p>
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
+			</p>
+			<p>
+Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
+			</p>
+		</span>
+                <span id="secondText" style="display:none">
+			<p>99 bottles of beer on the wall, 99 bottles of beer.<br>Take one down and pass it around, 98 bottles of beer on the wall.</p>
+
+			<p>98 bottles of beer on the wall, 98 bottles of beer.<br>Take one down and pass it around, 97 bottles of beer on the wall.</p>
+
+			<p>97 bottles of beer on the wall, 97 bottles of beer.<br>Take one down and pass it around, 96 bottles of beer on the wall.</p>
+
+			<p>96 bottles of beer on the wall, 96 bottles of beer.<br>Take one down and pass it around, 95 bottles of beer on the wall.</p>
+		</span>
+                <span id="thirdText" style="display:none">
+			<p>this is the third thing</p>
+		</span>
 	  </div>
 	</div>
   </div>
-</div>
+  </div>
 
-<script>
+  <script>
 
-function displayText(x) {
+  function displayText(x) {
     var f = document.getElementById("firstText");
     var s = document.getElementById("secondText");
     var t = document.getElementById("thirdText");
@@ -74,7 +98,7 @@ function displayText(x) {
     }
   
      
-}
-</script>
-</body>
+  }
+  </script>
+  </body>
 </html>
