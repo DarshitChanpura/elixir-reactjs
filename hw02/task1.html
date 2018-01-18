@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 	<title>HW 02 task 1</title>
+    	<style>
+            table {
+ 	   	border-collapse: collapse;
+	        text-align: center
+		}
+            #powerTable,tr,td{
+            	border: 1px solid;
+	        padding: 1px 5px
+            }
+        </style>
+   
+  </head>
+<body onload="powerFunction()">
+  <div>
+    <ul>
+	<li><a href="https://www.w3schools.com/html/default.asp">Learn HTML</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+	&nbsp;&nbsp;|&nbsp;&nbsp;
+	<a href="https://en.wikipedia.org/wiki/Alaskan_Malamute">Alaskan Malamute wiki</a></li><br>
+	<li><img src="Alaskan_Malamute.jpg" alt="AlaskanMalamute" style="display:flex;width:20%;height:10%"></li><br>
+	<li>
+	   <table id="powerTable">
+		<tr><td>x</td><td>2<sup>x</sup></td></tr>
+	   </table>
+	</li>
+    </ul>
+  </div>
+
+<script>
+function powerFunction() {
+    var table = document.getElementById("powerTable");
+    var rownum = 1;
+    for(i=0;i<8;i++)
+    {
+    	var row = table.insertRow(rownum);
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        cell1.innerHTML = i;
+        cell2.innerHTML = Math.pow(2,i);
+        
+        rownum++;
+    }
+     
+}
+</script>
+</body>
+</html>

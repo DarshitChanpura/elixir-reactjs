@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 	<title>HW 02 task 2</title> 	   
+	<style>
+	.footer {
+	   position: fixed;
+	   left: 0;
+	   bottom: 0;
+	   width: 100%;
+	}	
+	</style>
+  </head>
+<body>
+
+  <h1 id="currentNumber">10</h1>
+
+  <div>
+	<button onclick="alertFunction()">Alert</button>
+	<button onclick="incrementFunction()">Increment</button>
+	<button onclick="displayAtBottom()">Display</button>
+  </div>
+<div class="footer" id="footDiv">
+</div>
+
+<script>
+function alertFunction(){
+    var currNum = document.getElementById("currentNumber");
+    alert(currNum.innerHTML);
+}
+
+function incrementFunction(){
+    var c = document.getElementById("currentNumber");
+    var val = c.innerHTML;
+    val++;
+    c.innerHTML = val;
+}
+
+function displayAtBottom() {
+    var c = document.getElementById("currentNumber");
+    var d = document.getElementById("footDiv");
+    var p = document.createElement("p");
+    var text = document.createTextNode(c.innerHTML);
+    p.appendChild(text);
+
+    d.appendChild(p);
+     
+}
+</script>
+</body>
+</html>
