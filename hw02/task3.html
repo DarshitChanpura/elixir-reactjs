@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+ 	<title>HW 02 task 3</title> 	   
+	<style>
+	  #displayTable{
+		display: table;
+		width: 70%;
+		border: 1px solid;
+	  }
+	  #tableHeader{
+		font-weight: bold;
+		border-bottom: 1px solid black;
+		text-align: center;
+		padding: 15px;
+	  }
+ 	  #firstCol{
+		width: 33%;
+		display: inline-block;
+		border-right: 1px solid black;
+		text-align: center;
+	  }
+	  #firstCol,span{ padding: 3px;}
+	  #secondCol{
+		float: right;
+		width: 66%;
+		text-align: center;
+	  }
+	</style>
+  </head>
+<body>
+
+  <div id="displayTable">
+	<div id="tableHeader">HW03 Task Three</div>
+	<div id="tableBody">
+	  <div id="firstCol">
+		<span onclick="displayText('first')" id="first">LoremIpsem</span><br>
+		<span onclick="displayText('second')" id="second">99 Bottles</span><br>
+		<span onclick="displayText('third')" id="third">Third Thing</span>
+	  </div>
+          <div id="secondCol">
+		<span id="firstText" style="display:block">LoremIpsem</span>
+                <span id="secondText" style="display:none">99 Bottles</span>
+                <span id="thirdText" style="display:none">Third Thing</span>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script>
+
+function displayText(x) {
+    var f = document.getElementById("firstText");
+    var s = document.getElementById("secondText");
+    var t = document.getElementById("thirdText");
+
+    if(x == "first")
+    {
+	f.style.display="block";
+	s.style.display="none";
+	t.style.display="none";	
+    }
+    else if(x == "second")
+    {
+        f.style.display="none";
+        s.style.display="block";
+        t.style.display="none"; 
+    }
+    else if(x == "third")
+    {
+        f.style.display="none";
+        s.style.display="none";
+        t.style.display="block"; 
+    }
+  
+     
+}
+</script>
+</body>
+</html>
