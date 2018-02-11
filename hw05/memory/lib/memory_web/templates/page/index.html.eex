@@ -1,0 +1,14 @@
+<h1>Game Lobby</h1>
+<!--
+<div id="game">
+  Loading...
+</div> -->
+
+<div class="row">
+  <div class="col">
+
+    <p><label>Your Name:</label><input type="text" id="playerName" name="game_name" placeholder="player name"/></p>
+    <p><a id="gameLink"><button id="joinGame" class="btn btn-primary" style="background-color:cadetblue;">Join game</button></a></p>
+
+  </div>
+</div>
